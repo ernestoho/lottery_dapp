@@ -109,7 +109,7 @@ const Home: NextPage = () => {
     }
   };
 
-  if (isLoading) return <Loading />;
+  // if (isLoading) return <Loading />;
   if (!address) return <Login />;
   return (
     <div className="bg-black min-h-screen flex flex-col">
