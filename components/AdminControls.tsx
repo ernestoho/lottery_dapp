@@ -87,7 +87,7 @@ function AdminControls() {
   const onRefundAll = async ()=>{
     const notification = toast.loading("Refunding all...")
     try{
-        const data=await restartDraw([{}]);
+        const data=await RefundAll([{}]);
         toast.success("All refunded successfully!",
         {
             id:notification,
@@ -102,7 +102,7 @@ function AdminControls() {
   };
   
   return (
-    <div className="text-white text-center px-5 py-3 rounded-md border-emerald-300/20 border">
+    <div className="text-white text-center px-5 py-3 rounded-md border-[#350336] border">
       <h2 className="font-bold">AdminControls</h2>
       <p className="mb-5">
         Total Commission to be withdrawn:{" "}

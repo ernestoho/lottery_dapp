@@ -11,7 +11,7 @@ function NavButton({ title, isActive, onClick }: Props) {
     <button
       onClick={onClick}
       className={
-        '${isActive && "bg-[#a128a1]"} hover:bg-[#a128a1] text-white py-2 px-4 rounded font-bold'
+        '${isActive && "bg-gradient-to-br from-[#350336] to-[#E056FD]"} hover:bg-gradient-to-br from-[#350336] to-[#E056FD] text-white py-2 px-4 rounded font-bold'
       }
     >
       {title}
